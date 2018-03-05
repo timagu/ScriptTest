@@ -6,14 +6,14 @@ public class Boss : MonoBehaviour {
 	int mp = 53;
 	// Use this for initialization
 	void Magic () {
-		mp-=5;
+		
 		if (mp>5){
 			Debug.Log("魔法攻撃をした。残りMPは、" + mp);
 		}else{
 			Debug.Log("魔法攻撃をした。残りMPは、" + mp);
 			Debug.Log("MPが足りないため魔法を使えない。");
 		}
-		
+		mp-=5;
 	}
 	
 	// Update is called once per frame
@@ -22,10 +22,5 @@ public class Boss : MonoBehaviour {
 			Magic ();
 		}
 		Magic ();
-		if (this.mp>5){
-			Debug.Log("魔法攻撃をした。残りMPは、" + this.mp);
-		}else{
-			Debug.Log("MPが足りないため魔法を使えない。");
-		}
 	}
 }
