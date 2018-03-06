@@ -8,10 +8,9 @@ public class Boss : MonoBehaviour {
 	void Magic () {
 		
 		if (mp>5){
-			Debug.Log("魔法攻撃をした。残りMPは、" + mp);
             mp -= 5;
+            Debug.Log("魔法攻撃をした。残りMPは、" + mp);
         } else{
-			Debug.Log("魔法攻撃をした。残りMPは、" + mp);
 			Debug.Log("MPが足りないため魔法を使えない。");
         }
 	}
