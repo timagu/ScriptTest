@@ -9,11 +9,11 @@ public class Boss : MonoBehaviour {
 		
 		if (mp>5){
 			Debug.Log("魔法攻撃をした。残りMPは、" + mp);
-		}else{
+            mp -= 5;
+        } else{
 			Debug.Log("魔法攻撃をした。残りMPは、" + mp);
 			Debug.Log("MPが足りないため魔法を使えない。");
-		}
-		mp-=5;
+        }
 	}
 	
 	// Update is called once per frame
